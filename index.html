@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/TailsHome/index.js"></script>
     <link rel="modulepreload" crossorigin href="/TailsHome/assets/vendor-D3HxRb6v.js">
     <link rel="stylesheet" crossorigin href="/TailsHome/assets/vendor-PE1w-QA7.css">
-    <link rel="stylesheet" crossorigin href="/TailsHome/assets/index-CMJKF3xH.css">
+    <link rel="stylesheet" crossorigin href="/TailsHome/assets/index-DlDg9db5.css">
   </head>
   <body>
     <header class="header">
@@ -443,6 +443,57 @@
         </svg>
       </div>
       <div class="detail-content"></div>
+    </div>
+  </div>
+</section>
+
+      <section class="modal-order">
+  <div class="container">
+    <div class="modal">
+      <button class="modal-btn" type="button">
+        <svg class="modal-btn-icon" width="32" height="32">
+          <use href="/TailsHome/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-slogan">Залишіть заявку на знайомство</p>
+      <form class="modal-form">
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-name">Ім’я*</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Андрій"
+            />
+          </div>
+        </div>
+
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-phone">Телефон*</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="+38 (095) 555 99 22"
+            />
+          </div>
+        </div>
+
+        <div class="modal-form-wrapper-comment">
+          <label class="modal-form-label" for="user-comment">Коментар</label>
+          <textarea
+            id="user-comment"
+            name="user-comment"
+            class="modal-form-review"
+            placeholder="Напишіть ваш коментар"
+          ></textarea>
+        </div>
+        <button class="button-adopt-agree" type="submit">Send</button>
+      </form>
     </div>
   </div>
 </section>
