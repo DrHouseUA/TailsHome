@@ -48,7 +48,7 @@ import{a as l,i as C,S as h,A as q}from"./assets/vendor-B6gZsb19.js";(function()
             ${G(o.rate)}
           </div>
         </div>
-        <div>
+        <div class="stories-comment-wrapper">
           <p class="description-comment">${o.description}</p>
           <p class="author-comment">${o.author}</p>
         </div>
