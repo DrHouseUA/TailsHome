@@ -4,10 +4,12 @@ const closeBtn = document.getElementById('menuCloseBtn');
 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.add('active');
+  document.body.classList.add('modal-open');
 });
 
 closeBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('active');
+  document.body.classList.remove('modal-open');
 });
 
 const links = document.querySelectorAll('.nav-link');
@@ -33,6 +35,7 @@ document.querySelectorAll('.mobile-nav-btn, .header-btn').forEach(btn => {
       });
     }
     mobileMenu.classList.remove('active');
+    document.body.classList.remove('modal-open');
   });
 });
 
@@ -54,5 +57,6 @@ document.querySelectorAll('.mobile-nav-link, .nav-link').forEach(link => {
 
     const mobileMenu = document.getElementById('mobileMenu');
     mobileMenu.classList.remove('active');
+    document.body.classList.remove('modal-open');
   });
 });
