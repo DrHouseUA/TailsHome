@@ -17,7 +17,9 @@
   }
 }
 .footer-logo {
-  width: 302px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 129px;
   margin: 0 auto;
   margin-bottom: 32px;
