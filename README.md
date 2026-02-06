@@ -1,113 +1,368 @@
-# Vanilla App Template
+# TailsHome
 
-Цей проект було створено за допомогою Vite. Для знайомства та налаштування
-додаткових можливостей [звернись до документації](https://vitejs.dev/).
+---
 
-## Створення репозиторію за шаблоном
+## Project Title
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення
-репозиторію свого проекту. Для цього натисни на кнопку `«Use this template»` і
-обери опцію `«Create a new repository»`, як показано на зображенні.
+**TailsHome: A Modern, Privacy-First Animal Adoption Platform**
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+---
 
-На наступному етапі відкриється сторінка створення нового репозиторію. Заповни
-поле його імені, переконайся, що репозиторій публічний, після чого натисни
-кнопку `«Create repository from template»`.
+## Description
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+TailsHome is an open-source, web-based platform designed to streamline and modernize the animal adoption process for shelters, volunteers, and adopters. Built with a focus on privacy, accessibility, and developer ergonomics, TailsHome empowers animal welfare organizations to showcase their animals, manage adoption workflows, and engage with the community through a fast, responsive, and maintainable website. Leveraging the latest web technologies—including Vite.js and Tailwind CSS—TailsHome delivers a seamless user experience, robust performance, and a scalable architecture that is easy for contributors to extend and customize.
 
-Після того, як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
-на зображенні.
+The project originated as a collaborative team effort, inspired by the need for transparent, user-friendly digital tools in the animal rescue sector. TailsHome is not affiliated with the Tails OS project; rather, it is a distinct initiative focused on animal welfare, with its own branding and mission. The repository was generated from the GoIT Academy’s vanilla-app-template, ensuring a solid foundation for modern frontend development and continuous deployment via GitHub Actions and GitHub Pages.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+---
 
-Проскроливши сторінку до самого кінця, в секції `«Workflow permissions»` обери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це необхідно
-для автоматизації процесу деплою проекту.
+## Features
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+TailsHome offers a comprehensive suite of features tailored for animal adoption organizations and their communities. The following table summarizes the core capabilities:
 
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів та папок
-репозиторію-шаблону. Далі працюй з ним, як з будь-яким іншим особистим
-репозиторієм, клонуй його собі на комп'ютер, пиши код, роби коміти та відправляй
-їх на GitHub.
+| Feature                         | Description                                                                                   |
+|----------------------------------|----------------------------------------------------------------------------------------------|
+| Responsive UI                   | Mobile-first, accessible design for all devices                                               |
+| Animal Profiles                  | Detailed listings with photos, age, breed, health status, and adoption status                |
+| Adoption Workflow                | Step-by-step guidance for adopters, including application forms and volunteer contact         |
+| Volunteer & Donation Info        | Sections for volunteering, donations, and community support                                  |
+| Multilingual Support             | Content available in multiple languages (Ukrainian, Polish, Romanian, Turkish, English)      |
+| Automated Deployment             | CI/CD pipeline with GitHub Actions for seamless updates and production builds                |
+| Modular Codebase                 | Clean separation of concerns with partials, CSS modules, and asset management                |
+| Performance Optimizations        | Fast load times, optimized images, and minimal bundle sizes                                  |
+| Accessibility                    | Semantic HTML, keyboard navigation, and screen reader compatibility                          |
+| Customizable Branding            | Easily adapt colors, logos, and content for different organizations                          |
+| Open Source Collaboration        | Clear contributing guidelines and MIT license for community-driven development               |
 
-## Підготовка до роботи
+Each feature is designed to address the real-world needs of animal shelters and their supporters. The responsive UI ensures that users can browse and interact with the platform on any device, from smartphones to desktops. Animal profiles are rich and informative, helping potential adopters make informed decisions. The adoption workflow demystifies the process, reducing friction and increasing successful placements. Multilingual support broadens the platform’s reach, while automated deployment and modular architecture make it easy for developers to maintain and extend the project.
 
-1. Переконайся, що на комп'ютері встановлено LTS-версію Node.js.
-   [Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проекту в терміналі командою `npm install`.
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-4. Перейдіть у браузері за адресою
-   [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
-   перезавантажуватись після збереження змін у файли проекту.
+---
 
-## Файли і папки
+## Demo
 
-- Файли розмітки компонентів сторінки повинні лежати в папці `src/partials` та
-  імпортуватись до файлу `index.html`. Наприклад, файл з розміткою хедера
-  `header.html` створюємо у папці `partials` та імпортуємо в `index.html`.
-- Файли стилів повинні лежати в папці `src/css` та імпортуватись до HTML-файлів
-  сторінок. Наприклад, для `index.html` файл стилів називається `index.css`.
-- Зображення додавай до папки `src/img`. Збирач оптимізує їх, але тільки при
-  деплої продакшн версії проекту. Все це відбувається у хмарі, щоб не
-  навантажувати твій комп'ютер, тому що на слабких компʼютерах це може зайняти
-  багато часу.
+A live deployment of TailsHome is available for demonstration and testing purposes:
 
-## Деплой
+**Live Demo:** [https://drhouseua.github.io/TailsHome/](https://drhouseua.github.io/TailsHome/)
 
-Продакшн версія проекту буде автоматично збиратися та деплоїтись на GitHub
-Pages, у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад,
-після прямого пуша або прийнятого пул-реквесту. Для цього необхідно у файлі
-`package.json` змінити значення прапора `--base=/<REPO>/`, для команди `build`,
-замінивши `<REPO>` на назву свого репозиторію, та відправити зміни на GitHub.
+The demo site showcases real animal profiles, adoption information, and the full user experience as intended for end users. It is automatically updated with each push to the main branch, ensuring that the latest features and fixes are always available for review.
 
-```json
-"build": "vite build --base=/<REPO>/",
+---
+
+## Installation
+
+To set up TailsHome for local development or deployment, follow these steps:
+
+### Prerequisites
+
+- **Node.js** (LTS version 18.x or higher recommended)
+- **npm** (Node Package Manager, comes with Node.js)
+
+### Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/DrHouseUA/TailsHome.git
+   cd TailsHome
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+   This command installs all required packages as specified in `package.json`, including Vite, Tailwind CSS, and related plugins.
+
+3. **Start the Development Server**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be served at [http://localhost:5173](http://localhost:5173) by default. Any changes to source files will trigger hot module replacement and live reload.
+
+4. **Build for Production**
+
+   ```bash
+   npm run build
+   ```
+
+   This command generates optimized, static assets in the `dist/` directory, ready for deployment.
+
+5. **Preview the Production Build**
+
+   ```bash
+   npm run preview
+   ```
+
+   This serves the production build locally for final testing.
+
+**Note:** If you encounter issues with the `vite` command not being recognized, ensure that dependencies are installed and that your Node.js version meets the minimum requirements. See troubleshooting tips in the [Usage](#usage) section.
+
+---
+
+## Usage
+
+### Development Workflow
+
+- **Live Development:** After running `npm run dev`, open [http://localhost:5173](http://localhost:5173) in your browser. The page will automatically reload on file changes.
+- **Hot Module Replacement:** Vite provides instant updates for CSS and JavaScript changes, streamlining the development process.
+- **Customizing Content:** Edit HTML partials in `src/partials/`, CSS in `src/css/`, and images in `src/img/`. Changes are reflected immediately in the browser.
+- **Adding Features:** New components or sections can be added as partials and imported into `index.html` for modular development.
+
+### Production Deployment
+
+- **Automated CI/CD:** Every push to the `main` branch triggers a GitHub Actions workflow that builds and deploys the production version to GitHub Pages (`gh-pages` branch).
+- **Base Path Configuration:** Ensure the `build` script in `package.json` uses the correct base path:
+
+  ```json
+  "build": "vite build --base=/TailsHome/"
+  ```
+
+  Replace `/TailsHome/` with your repository name if you fork or rename the project.
+
+- **GitHub Pages Settings:** In your repository settings, under **Pages**, set the source to the `/root` folder of the `gh-pages` branch.
+
+### Troubleshooting
+
+- **Port Conflicts:** If port 5173 is in use, specify a different port:
+
+  ```bash
+  npm run dev -- --port 3000
+  ```
+
+- **Network Access:** To test on other devices in your network, run:
+
+  ```bash
+  npx vite --host
+  ```
+
+  This exposes the dev server to your local network.
+
+- **Dependency Issues:** If `vite` is not recognized, ensure you have run `npm install` and that your `node_modules` directory is present. Delete `node_modules` and `package-lock.json` and reinstall if necessary.
+
+- **Production Build Errors:** Check the console for path errors (404s) related to CSS or JS files. This often indicates an incorrect `--base` value in the build script.
+
+---
+
+## Technologies Used
+
+TailsHome is built with a modern, performant technology stack optimized for rapid development and maintainability. The following table summarizes the core technologies:
+
+| Technology         | Purpose                                         | Version / Notes                |
+|--------------------|------------------------------------------------|-------------------------------|
+| Vite.js            | Lightning-fast build tool and dev server        | v6.x (latest)                  |
+| Tailwind CSS       | Utility-first CSS framework                     | v4.x (with official Vite plugin)|
+| HTML5              | Semantic markup and accessibility               |                               |
+| JavaScript (ESNext)| Interactive features and logic                  |                               |
+| GitHub Actions     | CI/CD for automated deployment                  |                               |
+| GitHub Pages       | Static site hosting                             |                               |
+| Prettier           | Code formatting and style consistency           |                               |
+| EditorConfig       | Editor settings standardization                 |                               |
+
+**Key Details:**
+
+- **Vite.js** provides an ultra-fast development experience with hot module replacement, optimized builds, and a modern ES module-based workflow.
+- **Tailwind CSS v4** is integrated via the official Vite plugin, enabling rapid, utility-first styling with minimal configuration. No PostCSS or legacy config files are required for standard setups.
+- **GitHub Actions** automates the build and deployment process, ensuring that the live site is always up to date with the latest code changes.
+
+---
+
+## Folder Structure
+
+TailsHome follows a clear and modular folder structure, inspired by best practices for maintainable web applications. Below is an overview of the main directories and files:
+
+```
+TailsHome/
+├── .github/
+│   └── workflows/         # CI/CD workflow files (GitHub Actions)
+├── assets/                # Static assets (e.g., icons, logos)
+├── src/
+│   ├── css/               # CSS files (Tailwind imports, custom styles)
+│   ├── img/               # Images and media assets
+│   ├── partials/          # HTML partials (header, footer, sections)
+│   └── index.html         # Main HTML entry point
+├── .editorconfig          # Editor configuration
+├── .gitignore             # Git ignore rules
+├── .prettierrc.json       # Prettier code formatting config
+├── README.md              # Project documentation (English)
+├── package.json           # Project metadata and scripts
+├── package-lock.json      # Dependency lockfile
+├── vite.config.js         # Vite configuration
 ```
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) та
-виставити роздачу продакшн версії файлів з папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+**Explanation:**
 
-![GitHub Pages settings](./assets/repo-settings.png)
+- The `src/` directory contains all source files, including modular HTML partials, CSS, and images. This separation of concerns makes it easy to manage and extend the codebase.
+- The `.github/workflows/` directory holds CI/CD configuration files for automated deployment.
+- Multiple README translations (`README.pl.md`, `README.ro.md`, `README.tr.md`) support international contributors and users.
+- Configuration files like `.editorconfig` and `.prettierrc.json` enforce code style and editor consistency across the team.
 
-### Статус деплою
+---
 
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
+## Contributing Guidelines
 
-- **Жовтий колір** - виконується збірка та деплой проекту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, збірки чи деплою сталася помилка.
+We welcome contributions from developers, designers, and animal welfare advocates! To ensure a smooth and collaborative experience, please follow these guidelines:
 
-Більш детальну інформацію про статус можна переглянути натиснувши на іконку, і в
-вікні, що випадає, перейти за посиланням `Details`.
+### How to Contribute
 
-![Deployment status](./assets/deploy-status.png)
+1. **Fork the Repository**
 
-### Жива сторінка
+   Click the "Fork" button at the top right of the GitHub page to create your own copy.
 
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися за
-адресою, вказаною на вкладці `Settings` > `Pages` в налаштуваннях репозиторію.
-Наприклад, ось посилання на живу версію для цього репозиторію
+2. **Clone Your Fork**
 
-[https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/TailsHome.git
+   cd TailsHome
+   ```
 
-Якщо відкриється порожня сторінка, переконайся, що у вкладці `Console` немає
-помилок пов'язаних з неправильними шляхами до CSS та JS файлів проекту
-(**404**). Швидше за все у тебе неправильне значення прапора `--base` для
-команди `build` у файлі `package.json`.
+3. **Create a Feature Branch**
 
-## Як це працює
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-![How it works](./assets/how-it-works.png)
+4. **Make Your Changes**
 
-1. Після кожного пуша у гілку `main` GitHub-репозиторію, запускається
-   спеціальний скрипт (GitHub Action) із файлу `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується та
-   проходить лінтинг та збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн версія файлів проекту
-   відправляється у гілку `gh-pages`. В іншому випадку, у лозі виконання скрипта
-   буде вказано в чому проблема.
+   - Follow the existing code style (Prettier and EditorConfig are enforced).
+   - Write clear, descriptive commit messages.
+   - Update or add documentation as needed.
+
+5. **Test Your Changes**
+
+   - Run `npm run dev` to test locally.
+   - Ensure your changes do not break existing functionality.
+
+6. **Push and Submit a Pull Request**
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+   - Open a pull request from your branch to the `main` branch of the original repository.
+   - Provide a clear description of your changes and reference any related issues.
+
+### Code of Conduct
+
+All contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) or similar community standards. Be respectful, inclusive, and constructive in all interactions.
+
+### Issue Reporting
+
+- Use the GitHub Issues tab to report bugs, request features, or ask questions.
+- Provide as much detail as possible, including steps to reproduce bugs and screenshots if applicable.
+
+### Pull Request Process
+
+- Keep pull requests focused and limited to a single feature or fix.
+- Reference related issues in your pull request description.
+- Respond promptly to feedback from maintainers.
+
+### Additional Resources
+
+- [GitHub’s official contributing guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
+- [Awesome Contributing Guides](https://github.com/mntnr/awesome-contributing) for inspiration
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code for personal or commercial purposes, provided that you include the original copyright and license notice.
+
+For more information, see the [LICENSE](LICENSE) file in the repository root.
+
+**Why MIT?**  
+The MIT License is short, permissive, and widely adopted in the open-source community. It encourages collaboration and reuse while protecting contributors from liability.
+
+---
+
+## Contact Information
+
+**Maintainer:**  
+Roman Kniazhyk ([DrHouseUA](https://github.com/DrHouseUA))  
+Location: Uzhhorod, Ukraine  
+GitHub: [https://github.com/DrHouseUA](https://github.com/DrHouseUA)
+
+For questions, suggestions, or collaboration opportunities, please open an issue or pull request on GitHub. You may also reach out via [LinkedIn](https://www.linkedin.com/in/roman-kniazhyk/) (if available on the maintainer’s profile).
+
+---
+
+## Code Quality and CI/CD
+
+### Code Quality
+
+- **Prettier** is used for automatic code formatting. Run `npx prettier --write .` to format your code before committing.
+- **EditorConfig** ensures consistent editor settings across different development environments.
+- **Modular Structure:** The use of partials and CSS modules encourages clean, maintainable code.
+- **Accessibility:** Semantic HTML and ARIA attributes are used where appropriate to support screen readers and keyboard navigation.
+
+### Continuous Integration / Continuous Deployment (CI/CD)
+
+- **GitHub Actions** automates the build and deployment process. Every push to the `main` branch triggers a workflow that:
+  - Installs dependencies
+  - Runs linting and build scripts
+  - Deploys the production build to GitHub Pages (`gh-pages` branch)
+- **Status Indicators:** Deployment status is visible via icons next to commit hashes (yellow = building, green = success, red = error). Detailed logs are available in the Actions tab.
+
+---
+
+## Accessibility and Performance
+
+### Accessibility
+
+- **Semantic HTML:** All pages use semantic tags (`<header>`, `<main>`, `<section>`, `<footer>`) for improved screen reader support.
+- **Keyboard Navigation:** Interactive elements are accessible via keyboard.
+- **Alt Text:** All images include descriptive `alt` attributes.
+- **Color Contrast:** Tailwind CSS ensures sufficient contrast for text and UI elements.
+
+### Performance
+
+- **Vite.js:** Provides lightning-fast development and optimized production builds.
+- **Tailwind CSS:** Utility-first approach minimizes unused CSS and reduces bundle size.
+- **Image Optimization:** Images in `src/img/` are optimized during the production build.
+- **Code Splitting:** Vite automatically splits code for faster load times.
+- **Best Practices:** Follows recommendations for asset management, caching, and modern browser support.
+
+---
+
+## Testing and Local Development
+
+### Local Development
+
+- **Hot Module Replacement:** Instant feedback on code changes via Vite’s dev server.
+- **Network Testing:** Use `npx vite --host` to expose the dev server to other devices on your local network for cross-device testing.
+- **Port Configuration:** Change the default port with `npm run dev -- --port 3000` if needed.
+
+---
+
+## Branding and README Styling Best Practices
+
+### Branding
+
+- **Project Identity:** TailsHome uses a distinct name and visual identity, separate from Tails OS or other similarly named projects.
+- **Customizable:** Organizations can adapt colors, logos, and content to match their own branding.
+- **Multilingual Support:** README files and site content are available in multiple languages to foster inclusivity.
+
+### README Styling
+
+- **Clear Structure:** Uses Markdown headers, tables, and code blocks for readability.
+- **Visual Hierarchy:** Key sections are emphasized with bold text and tables.
+- **Conciseness:** Each section is focused and actionable, following best practices from leading open-source projects.
+- **Badges:** (Optional) Add badges for build status, license, and version using [shields.io](https://shields.io/) for quick project insights.
+
+---
+
+## Acknowledgments
+
+- **GoIT Academy:** For providing the vanilla-app-template that served as the foundation for this project.
+- **Tailwind CSS & Vite:** For their excellent documentation and developer tooling.
+- **Open Source Community:** For ongoing inspiration and contributions to animal welfare technology.
+
+---
+
+**Built with ❤️ by the TailsHome Team and Contributors.**
+
+---
+
+**Happy coding, and thank you for supporting animal adoption!**
